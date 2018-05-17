@@ -35,6 +35,9 @@
         },
         {
             "name": "part_C_output.csv"
+        },
+        {
+            "name": "part_d_output.csv"
         }
     ],
     "edges": [
