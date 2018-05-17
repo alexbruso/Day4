@@ -18,8 +18,9 @@ hotelDataB <- cleanData
 # what is the 10th value in hotelDataB? #what's the likelihood to recommend? (it's 10)
 hotelDataB[10, ]
 
+# Staff_Cared_H = 10, Condition_Hotel_H = 10, staffperCond = 1
 
-
+testB1 = data.frame(staffperCond = 1)
 
 
 ## end your R code and logic 
