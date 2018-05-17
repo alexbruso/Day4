@@ -16,7 +16,7 @@ df <- read.csv('part_a_model2_output.csv')
 
 hotelDataB <- cleanData
 
-
+# the regression that I'll use to make my predictions
 modelA2 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelData)
 
 
