@@ -20,6 +20,9 @@
         },
         {
             "name": "part_a_model2_output.csv"
+        },
+        {
+            "name": "part_a_comparison.R"
         }
     ],
     "edges": [
