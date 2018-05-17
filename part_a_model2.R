@@ -10,6 +10,9 @@ df <- read.csv('data.csv')
 
 ## start writing your R code from here
 
+
+hotelData <- cleanData
+
 #Build a linear model that predicts ltr based on the hotel condition and the staff_cared attributes
 
 
