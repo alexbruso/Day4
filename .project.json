@@ -23,6 +23,9 @@
         },
         {
             "name": "part_a_comparison.R"
+        },
+        {
+            "name": "part_b.R"
         }
     ],
     "edges": [
