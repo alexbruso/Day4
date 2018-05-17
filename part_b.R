@@ -31,6 +31,8 @@ plot(newHotelData$staffPerCond,newHotelData$Likelihood_Recommend_H )
 
 
 testB1 = data.frame(staffperCond = 1)
+predictionB1 <-predict(modelB1, testB1, type="response")
+
 
 
 ## end your R code and logic 
