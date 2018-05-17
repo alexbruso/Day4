@@ -8,6 +8,7 @@ setwd(Sys.getenv('PROJECT_HOME'))
 df <- read.csv('data.csv')
 ####################################
 
+library(kernlab)
 ## start writing your R code from here
 
 #create a column that has a true of false value for L2T Values less than 7 and assign to new column
@@ -46,7 +47,7 @@ testData
 svmOutput <- ksvm(isDetractor~Condition_Hotel_H,data=trainData, C=5, prob.model=TRUE)
 
 svmPred <- predict(svmOutput, testData[1650,], type="votes")
-compTable <- data.frame(testData[1650,60],svmPred[1,])
+compTable <- data.frame(testData[1650,61],svmPred[1,])
 table(compTable)
 
 df <- df[!is.na(df$Staff_Cared_H), ]
@@ -54,8 +55,8 @@ df <- df[!is.na(df$Staff_Cared_H), ]
 #Testing on the 1650 survey
 svmOutput2 <- ksvm(isDetractor~Condition_Hotel_H+Staff_Cared_H, data=trainData, C=5, prob.model=TRUE)
 
-svmPred2 <- predict(svmOutput2, testData[1650,], type="votes")
-compTable2 <- data.frame(testData[1650,60],svmPred2[1,])
+svmPred2 <- predict(svmOutput2, testData[,], type="votes")
+compTable2 <- data.frame(testData[,61],svmPred2[1,])
 table(compTable2)
 ## end your R code and logic 
 
