@@ -41,6 +41,9 @@
         },
         {
             "name": "part_e.R"
+        },
+        {
+            "name": "scatterplot_partA.R"
         }
     ],
     "edges": [
@@ -99,6 +102,10 @@
         {
             "source": "data.csv",
             "target": "part_e.R"
+        },
+        {
+            "source": "data.csv",
+            "target": "scatterplot_partA.R"
         }
     ]
 }
