@@ -14,7 +14,7 @@ df <- read.csv('part_a_model2_output.csv')
 #your dataframe, and see if the model predicts a detractor. 
 #How does the prediction compare to the actual value (which you have in the dataframe)
 
-hotelDataB <- newHotelData
+hotelDataB <- na.omit(df)
 # what is the 10th value in hotelDataB? #what's the likelihood to recommend? (it's 10)
 hotelDataB[10, 29]
 hotelDataB[10, 33]
@@ -37,11 +37,7 @@ staffperCond = NULL
 
 
 
-hotelDataB[1065, 29]
-hotelDataB[1065, 33]
-hotelDataB[1065, 35]
-
-condCalc2 = hotelDataB[1065, 35] / hotelDataB[1065, 33]
+condCalc2 = df[1065, 35] / df[1065, 33]
 
 
 
