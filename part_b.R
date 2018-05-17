@@ -17,6 +17,22 @@ df <- read.csv('part_a_model2_output.csv')
 hotelDataB <- cleanData
 
 
+modelA2 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelData)
+
+
+
+testB1 = data.frame(staffPerCond = 1)
+predict(modelA2, testB1, type="response")
+
+prediction1<- predict(modelA2, testA2, type="response")
+
+# my test predicts the ltr will be 8.872466, when the hotel condition and staff cared value is 4
+
+#In the code, show if the model is predicting a detractor or not
+
+
+if (prediction1 <6) "Detractor" else "Not a detractor"
+
 
 
 ## end your R code and logic 
