@@ -12,10 +12,6 @@ df <- read.csv('data.csv')
 
 ## end your R code and logic 
 
-####################################
-##### write output file ############
-write.csv(df, file = 'part_a_model1_output.csv')
-####################################
 
 #Build a linear model, trying to predict ltr based on the hotel condition
 
@@ -111,3 +107,9 @@ prediction1<- predict(modelA2, testA2, type="response")
 
 
 if (prediction1 <6) "Detractor" else "Not a detractor"
+
+
+####################################
+##### write output file ############
+write.csv(df, file = 'part_a_model1_output.csv')
+####################################
