@@ -24,13 +24,13 @@ hotelDataB[10, 35]
 
 # Staff_Cared_H = 10, Condition_Hotel_H = 10, staffperCond = 1
 
-modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelData)
+modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= hotelDataB)
 plot(newHotelData$staffPerCond,newHotelData$Likelihood_Recommend_H )
 
+placeholderB <- 1
 
-
-testB1 = data.frame(staffperCond = 1)
-predictionB1 <-predict(modelB1, testB1, type="response")
+testB1 = data.frame(staffperCond = placeholderB)
+predict(modelB1, testB1, type="response")
 
 
 
