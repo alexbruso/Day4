@@ -41,6 +41,9 @@
         },
         {
             "name": "part_e.R"
+        },
+        {
+            "name": "scatterplot_partA.R"
         }
     ],
     "edges": [
