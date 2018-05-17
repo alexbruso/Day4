@@ -36,10 +36,12 @@ placeholderB = NULL
 staffperCond = NULL
 
 
+
 hotelDataB[1065, 29]
 hotelDataB[1065, 33]
 hotelDataB[1065, 35]
 
+condCalc2 = hotelDataB[1065, 35] / hotelDataB[1065, 33]
 
 
 
