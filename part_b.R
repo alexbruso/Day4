@@ -35,14 +35,17 @@ predictionB1 <-predict(modelB1, testB1, type="response") #prediction of 8.872466
 placeholderB = NULL
 staffperCond = NULL
 
+extraDf = df
+
 
 newstaffPerCond <- extraDf$Staff_Cared_H / extraDf$Condition_Hotel_H 
 newstaffPerCond <- round(newstaffPerCond, digits=2)
-newstaffPerCond <- data.frame(newstaffPerCond) 
+newstaffPerCond <- data.frame(newstaffPerCond)
+
+HotelDataC <- cbind(extraDf, newstaffPerCond)
 
 
-condCalc2 = newstaffPerCond[1065, 35] / newstaffPerCond[1065, 33]
-extraDf = df
+condCalc2 = HotelDataC[1065, 35] / HotelDataC[1065, 33]
 
 
 modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= hotelDataB)
