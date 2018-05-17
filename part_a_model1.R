@@ -12,7 +12,7 @@ df <- read.csv('data.csv')
 
 ## end your R code and logic 
 
-
+df <- na.omit(df)
 #Build a linear model, trying to predict ltr based on the hotel condition
 
 hotelData <- cleanData
