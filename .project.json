@@ -42,6 +42,10 @@
         {
             "source": "part_a_model1.R",
             "target": "part_a_model1_output.csv"
+        },
+        {
+            "source": "part_a_model2.R",
+            "target": "part_a_model2_output.csv"
         }
     ]
 }
