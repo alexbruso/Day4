@@ -10,6 +10,11 @@ df <- read.csv('data.csv')
 
 ## start writing your R code from here
 
+
+
+import
+
+
 ## end your R code and logic 
 
 ####################################
