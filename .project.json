@@ -26,6 +26,9 @@
         },
         {
             "name": "part_b.R"
+        },
+        {
+            "name": "part_C.R"
         }
     ],
     "edges": [
