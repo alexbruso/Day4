@@ -108,6 +108,6 @@ prediction1<- predict(modelA2, testA2, type="response")
 # my test predicts the ltr will be 8.872466, when the hotel condition and staff cared value is 4
 
 #In the code, show if the model is predicting a detractor or not
-#
+
 
 if (prediction1 <6) "Detractor" else "Not a detractor"
