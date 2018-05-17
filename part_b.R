@@ -42,14 +42,14 @@ newstaffPerCond <- extraDf$Staff_Cared_H / extraDf$Condition_Hotel_H
 newstaffPerCond <- round(newstaffPerCond, digits=2)
 newstaffPerCond <- data.frame(newstaffPerCond)
 
-HotelDataC <- cbind(extraDf, newstaffPerCond)
+HotelDataB <- cbind(extraDf, newstaffPerCond)
+
+hotelDataB = NULL
+condCalc2 = HotelDataB[1065, 35] / HotelDataB[1065, 33]
 
 
-condCalc2 = HotelDataC[1065, 35] / HotelDataC[1065, 33]
-
-
-modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= hotelDataB)
-plot(hotelDataB$staffPerCond,hotelDataB$Likelihood_Recommend_H )
+modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= HotelDataC)
+plot(HotelDataB$staffPerCond,HotelDataB$Likelihood_Recommend_H )
 ## end your R code and logic 
 
 ####################################
