@@ -38,6 +38,8 @@ staffperCond = NULL
 
 newstaffPerCond <- extraDf$Staff_Cared_H / extraDf$Condition_Hotel_H 
 newstaffPerCond <- round(newstaffPerCond, digits=2)
+staffPerCond <- data.frame(staffPerCond) 
+
 
 condCalc2 = newstaffPerCond[1065, 35] / newstaffPerCond[1065, 33]
 extraDf = df
