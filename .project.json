@@ -77,6 +77,10 @@
         {
             "source": "data.csv",
             "target": "part_C.R"
+        },
+        {
+            "source": "part_C.R",
+            "target": "part_C_output.csv"
         }
     ]
 }
