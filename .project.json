@@ -11,6 +11,9 @@
         },
         {
             "name": "part_a_model1.R"
+        },
+        {
+            "name": "part_a_model2.R"
         }
     ],
     "edges": [
