@@ -95,6 +95,10 @@
         {
             "source": "part_d.R",
             "target": "part_d_output.csv"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_e.R"
         }
     ]
 }
