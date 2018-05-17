@@ -8,6 +8,39 @@
         },
         {
             "name": "clean.R"
+        },
+        {
+            "name": "part_a_model1.R"
+        },
+        {
+            "name": "part_a_model2.R"
+        },
+        {
+            "name": "part_a_model1_output.csv"
+        },
+        {
+            "name": "part_a_model2_output.csv"
+        },
+        {
+            "name": "part_a_comparison.R"
+        },
+        {
+            "name": "part_b.R"
+        },
+        {
+            "name": "part_C.R"
+        },
+        {
+            "name": "part_d.R"
+        },
+        {
+            "name": "part_C_output.csv"
+        },
+        {
+            "name": "part_d_output.csv"
+        },
+        {
+            "name": "part_e.R"
         }
     ],
     "edges": [
@@ -18,6 +51,54 @@
         {
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_a_model1.R"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_a_model2.R"
+        },
+        {
+            "source": "part_a_model1.R",
+            "target": "part_a_model1_output.csv"
+        },
+        {
+            "source": "part_a_model2.R",
+            "target": "part_a_model2_output.csv"
+        },
+        {
+            "source": "part_a_model1_output.csv",
+            "target": "part_a_comparison.R"
+        },
+        {
+            "source": "part_a_model2_output.csv",
+            "target": "part_a_comparison.R"
+        },
+        {
+            "source": "part_a_model2_output.csv",
+            "target": "part_b.R"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_C.R"
+        },
+        {
+            "source": "part_C.R",
+            "target": "part_C_output.csv"
+        },
+        {
+            "source": "part_C_output.csv",
+            "target": "part_d.R"
+        },
+        {
+            "source": "part_d.R",
+            "target": "part_d_output.csv"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_e.R"
         }
     ]
 }
