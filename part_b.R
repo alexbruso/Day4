@@ -22,7 +22,6 @@ hotelDataB[10, 35]
 
 
 
-
 # Staff_Cared_H = 10, Condition_Hotel_H = 10, staffperCond = 1
 
 modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelData)
