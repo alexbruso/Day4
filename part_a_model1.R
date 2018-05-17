@@ -10,11 +10,6 @@ df <- read.csv('data.csv')
 
 ## start writing your R code from here
 
-## end your R code and logic 
-
-df <- na.omit(df)
-#Build a linear model, trying to predict ltr based on the hotel condition
-
 hotelData <- cleanData
 
 modelA1 <- lm(formula = hotelData$Condition_Hotel_H ~ hotelData$Likelihood_Recommend_H, data= hotelData)
@@ -107,6 +102,10 @@ prediction1<- predict(modelA2, testA2, type="response")
 
 
 if (prediction1 <6) "Detractor" else "Not a detractor"
+
+## end your R code and logic 
+
+#Build a linear model, trying to predict ltr based on the hotel condition
 
 
 ####################################
