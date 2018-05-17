@@ -26,7 +26,7 @@ modelA1 <- lm(formula = hotelData$Condition_Hotel_H ~ hotelData$Likelihood_Recom
 plot(hotelData$Condition_Hotel_H,hotelData$Likelihood_Recommend_H)
 
 abline(modelA1)
-
+summary(modelA1)
 
 #Build a linear model that predicts ltr based on the hotel condition and the staff_cared attributes
 
@@ -44,6 +44,49 @@ modelA2 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelDa
 plot(newHotelData$staffPerCond,newHotelData$Likelihood_Recommend_H )
 
 abline(modelA2)
+summary(modelA2)
+
+#compare the two models 
 
 
+# 
+# Call:
+#   lm(formula = hotelData$Condition_Hotel_H ~ hotelData$Likelihood_Recommend_H, 
+#      data = hotelData)
+# 
+# Residuals:
+#   Min      1Q  Median      3Q     Max 
+# -4.8174 -0.5520  0.3542  0.3542  3.6357 
+# 
+# Coefficients:
+#   Estimate Std. Error t value Pr(>|t|)    
+# (Intercept)                       4.17665    0.22895   18.24   <2e-16 ***
+#   hotelData$Likelihood_Recommend_H  0.54692    0.02544   21.50   <2e-16 ***
+#   ---
+#   Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# 
+# Residual standard error: 1.015 on 571 degrees of freedom
+# Multiple R-squared:  0.4474,	Adjusted R-squared:  0.4464 
+# F-statistic: 462.2 on 1 and 571 DF,  p-value: < 2.2e-16
+# 
+
+# 
+# Call:
+#   lm(formula = Likelihood_Recommend_H ~ staffPerCond, data = newHotelData)
+# 
+# Residuals:
+#   Min      1Q  Median      3Q     Max 
+# -8.3748 -0.7519  0.3787  1.1275  2.1321 
+# 
+# Coefficients:
+#   Estimate Std. Error t value Pr(>|t|)    
+# (Intercept)    9.8771     0.2452  40.274  < 2e-16 ***
+#   staffPerCond  -1.0046     0.2291  -4.384 1.38e-05 ***
+#   ---
+#   Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# 
+# Residual standard error: 1.642 on 571 degrees of freedom
+# Multiple R-squared:  0.03257,	Adjusted R-squared:  0.03088 
+# F-statistic: 19.22 on 1 and 571 DF,  p-value: 1.384e-05
+#
 
