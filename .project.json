@@ -28,6 +28,10 @@
         {
             "source": "data.csv",
             "target": "part_a_model1.R"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_a_model2.R"
         }
     ]
 }
