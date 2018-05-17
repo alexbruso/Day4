@@ -31,6 +31,7 @@ testB1 = data.frame(staffPerCond = 1)
 predictionB1 <-predict(modelB1, testB1, type="response") #prediction of 8.872466, which is dangeourly close to the LTR value of 9
 
 
+
 placeholderB = NULL
 staffperCond = NULL
 ## end your R code and logic 
