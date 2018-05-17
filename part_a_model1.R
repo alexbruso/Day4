@@ -90,3 +90,7 @@ summary(modelA2)
 # F-statistic: 19.22 on 1 and 571 DF,  p-value: 1.384e-05
 #
 
+#Test the better model with hotel condition of 4 and staff cared value of 4; 
+#what is the predicted LTR
+
+
