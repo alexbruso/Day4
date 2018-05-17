@@ -36,11 +36,15 @@ placeholderB = NULL
 staffperCond = NULL
 
 
+newstaffPerCond <- extraDf$Staff_Cared_H / extraDf$Condition_Hotel_H 
+newstaffPerCond <- round(newstaffPerCond, digits=2)
 
-condCalc2 = df[1065, 35] / df[1065, 33]
+condCalc2 = newstaffPerCond[1065, 35] / newstaffPerCond[1065, 33]
+extraDf = df
 
 
-
+modelB1 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= hotelDataB)
+plot(hotelDataB$staffPerCond,hotelDataB$Likelihood_Recommend_H )
 ## end your R code and logic 
 
 ####################################
