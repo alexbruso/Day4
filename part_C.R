@@ -14,7 +14,8 @@ df <- read.csv('data.csv')
 
 ####################################
 ##### write output file ############
-# add your R code to write output file
+write.csv(df, file = 'part_C_output.csv')
 ####################################
+
 
 
