@@ -8,6 +8,9 @@
         },
         {
             "name": "clean.R"
+        },
+        {
+            "name": "part_a_model1.R"
         }
     ],
     "edges": [
