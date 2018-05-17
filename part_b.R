@@ -14,11 +14,20 @@ df <- read.csv('part_a_model2_output.csv')
 #your dataframe, and see if the model predicts a detractor. 
 #How does the prediction compare to the actual value (which you have in the dataframe)
 
-hotelDataB <- cleanData
+hotelDataB <- newHotelData
 # what is the 10th value in hotelDataB? #what's the likelihood to recommend? (it's 10)
-hotelDataB[10, ]
+hotelDataB[10, 29]
+hotelDataB[10, 33]
+hotelDataB[10, 35]
+
+
+
 
 # Staff_Cared_H = 10, Condition_Hotel_H = 10, staffperCond = 1
+
+modelA2 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelData)
+
+
 
 testB1 = data.frame(staffperCond = 1)
 
