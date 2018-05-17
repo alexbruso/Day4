@@ -5,7 +5,7 @@ setwd(Sys.getenv('PROJECT_HOME'))
 
 ####################################
 ## write code to read input csv into data frame
-df <- read.csv('part_a_model1_output.csv')
+df <- read.csv('part_a_model2_output.csv')
 ####################################
 
 ## start writing your R code from here
@@ -16,5 +16,6 @@ df <- read.csv('part_a_model1_output.csv')
 ##### write output file ############
 # add your R code to write output file
 ####################################
+
 
 
