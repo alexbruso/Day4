@@ -1,6 +1,6 @@
 #####################################
 ##### Do NOT delete this block #####
-setwd(Sys.getenv('PROJECT_HOME'))
+setwd('C:/stigmergy/Day4')
 ####################################
 
 ####################################
@@ -16,6 +16,7 @@ df <- read.csv('data.csv')
 ##### write output file ############
 write.csv(df, file = 'part_a_model1_output.csv')
 ####################################
+
 
 
 
