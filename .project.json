@@ -70,6 +70,10 @@
         {
             "source": "part_a_model2_output.csv",
             "target": "part_b.R"
+        },
+        {
+            "source": "data.csv",
+            "target": "part_C.R"
         }
     ]
 }
