@@ -34,6 +34,15 @@ predictionB1 <-predict(modelB1, testB1, type="response") #prediction of 8.872466
 
 placeholderB = NULL
 staffperCond = NULL
+
+
+hotelDataB[1065, 29]
+hotelDataB[1065, 33]
+hotelDataB[1065, 35]
+
+
+
+
 ## end your R code and logic 
 
 ####################################
