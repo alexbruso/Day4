@@ -14,6 +14,9 @@
         },
         {
             "name": "part_a_model2.R"
+        },
+        {
+            "name": "part_a_model1_output.csv"
         }
     ],
     "edges": [
