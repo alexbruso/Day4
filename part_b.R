@@ -15,23 +15,10 @@ df <- read.csv('part_a_model2_output.csv')
 #How does the prediction compare to the actual value (which you have in the dataframe)
 
 hotelDataB <- cleanData
-
-# the regression that I'll use to make my predictions
-modelA2 <- lm(formula = Likelihood_Recommend_H  ~ staffPerCond, data= newHotelData)
-
+# what is the 10th value in hotelDataB? #what's the likelihood to recommend? (it's 10)
+hotelDataB[10, ]
 
 
-testB1 = data.frame(staffPerCond = 1)
-predict(modelA2, testB1, type="response")
-
-prediction1<- predict(modelA2, testA2, type="response")
-
-# my test predicts the ltr will be 8.872466, when the hotel condition and staff cared value is 4
-
-#In the code, show if the model is predicting a detractor or not
-
-
-if (prediction1 <6) "Detractor" else "Not a detractor"
 
 
 
