@@ -17,6 +17,9 @@ df <- read.csv('data.csv')
 write.csv(df, file = 'part_a_model1_output.csv')
 ####################################
 
+#Build a linear model, trying to predict ltr based on the hotel condition
+
+
 
 
 
