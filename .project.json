@@ -81,6 +81,10 @@
         {
             "source": "part_C.R",
             "target": "part_C_output.csv"
+        },
+        {
+            "source": "part_C_output.csv",
+            "target": "part_d.R"
         }
     ]
 }
