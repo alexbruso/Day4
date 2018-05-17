@@ -39,9 +39,9 @@ staffPerCond <- data.frame(staffPerCond)
 newHotelData <- cbind(hotelData, staffPerCond)
 
 
-modelA2 <- lm(formula = staffPerCond ~ hotelData$Likelihood_Recommend_H, data= newHotelData)
+modelA2 <- lm(formula = newHotelData$staffPerCond ~ newHotelData$Likelihood_Recommend_H, data= newHotelData)
 
-plot(staffPerCond,hotelData$Likelihood_Recommend_H )
+plot(newHotelData$staffPerCond,newHotelData$Likelihood_Recommend_H )
 
 abline(modelA2)
 
